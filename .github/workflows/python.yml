@@ -11,7 +11,8 @@ jobs:
       env:
         SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
       with:
-        args: --all-projects
+        args: --file=requirements.txt
+        command: test 
         json: true
     - uses: garethr/snyk-to-sarif@master
     - uses: actions/upload-artifact@v2
