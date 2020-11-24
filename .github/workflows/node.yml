@@ -11,7 +11,7 @@ jobs:
       env:
         SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
       with:
-        args: --file=package-lock.json
+        args: --file=package.json
         command: test 
         json: true
     - uses: garethr/snyk-to-sarif@master
