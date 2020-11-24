@@ -5,10 +5,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@master
-    - uses: actions/setup-node@v1
-      with:
-        node-version: '12'
-    - run: npm install
     - name: Run Snyk to check for vulnerabilities
       uses: snyk/actions/node@master
       continue-on-error: true
@@ -17,6 +13,7 @@ jobs:
       with:
         command: test 
         json: true
+        args: --file=package-lock.json
     - uses: garethr/snyk-to-sarif@master
     - uses: actions/upload-artifact@v2
       with:
