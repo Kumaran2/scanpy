@@ -1,0 +1,11 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.19.0
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  'npm:marked:20140131-1':
+    - cassini > marked:
+        patched: '2020-11-24T02:25:30.431Z'
+  'npm:uglify-js:20151024':
+    - cassini > handlebars > uglify-js:
+        patched: '2020-11-24T02:25:30.431Z'
