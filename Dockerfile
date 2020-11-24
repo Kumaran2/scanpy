@@ -1,9 +1,9 @@
-FROM node:10.16.0-alpine
+#FROM node:10.16.0-alpine
 
-WORKDIR /source/scanpy
+#WORKDIR /source/scanpy
 
-COPY package.json /source/scanpy
+#COPY package.json /source/scanpy
 
-RUN cd /source/scanpy && npm i --only=production
+#RUN cd /source/scanpy && npm i --only=production
 
-COPY . .
+#COPY . .
