@@ -9,7 +9,7 @@ jobs:
       run: docker build -t kumaran2/scanpy .
     - name: Run Snyk to check Docker image for vulnerabilities
       # Snyk can be used to break the build when it detects vulnerabilities.
-      # In this case we want to upload the issues to GitHub Code Scanning
+      # In thiscase we want to upload the issues to GitHub Code Scanning
       continue-on-error: true
       uses: snyk/actions/docker@master
       env:
