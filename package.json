@@ -3,7 +3,8 @@
   "description": "",
   "version": "0.1.0",
   "dependencies": {
-    "serverless-pseudo-parameters": "^2.5.0"
+    "serverless-pseudo-parameters": "^2.5.0",
+    "cassini": "0.1.7"
   },
   "devDependencies": {
     "serverless-python-requirements": "^5.1.0"
