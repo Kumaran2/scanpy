@@ -13,7 +13,7 @@ jobs:
       with:
         command: test 
         json: true
-        args: --file=package.json
+        args: --file=package-lock.json
 #    - uses: garethr/snyk-to-sarif@master
 #    - uses: actions/upload-artifact@v2
 #      with:
